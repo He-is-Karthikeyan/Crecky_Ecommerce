@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:"Poppins", sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;    
+}
+.navbarlinks{
+    display: flex;
+    column-gap: 20px;
+}
+.navbarlinks a{
+    text-decoration: none;
+    color: #1D232C;
+}
+.navbarlinks a:hover{
+    text-decoration: underline;
+    color: #1D232C;    
+}
+.navbarmenutoggle{
+    display: none;
+}
+.sidenavbar{
+    background-color: #1D232C;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    padding: 20px;
+    color: white;
+    transition: 0.6s;
+    border-radius:5px;
+}
+.sidenavbarlink{
+    margin-bottom:30px;
+}
+.sidenavbarlinks a{
+    text-decoration: none;
+    color: white;
+}
+.sidenavbar i:hover{
+    cursor: pointer;
+}
+.navbarmenutoggle:hover{
+    cursor: pointer;
+}
+.sidenavbarlinks a:hover{
+    text-decoration: underline;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+}
+.headerbutton{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    background-color: #1D232C;
+    color: white;
+    cursor: pointer;
+}
+
+.service{
+    padding: 20px;
+}
+
+.servicecont1{
+    display: flex;
+    justify-content: space-between;
+}
+.servicecont2{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.servicecont2 div{
+    background-color: #e3ecf9;
+    border-radius: 5px;
+    padding: 10px;
+}
+.newarrival{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.newarrivalcont{
+    position: relative;
+    flex-basis: 20%;
+}
+.newarrival button{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top:10px;
+    color: #1D232C;
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    border-radius: 10px;
+    border: none;
+}
+.news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+.news input{
+    padding: 11px;
+    width: 80vw;
+    margin-bottom: 10px;
+    border: solid black 3px;
+}
+.news button{
+    margin-top: 10px;
+    color: #f2f4f7;
+    background-color: #1D232C;
+    border-radius: 10px;
+    padding: 10px;
+}
+.footer{
+    margin-top: 20px;
+    padding: 40px;
+    background-color: #1D232C;
+    color: #f2f4f7;
+}
+.productsection{
+    margin-top: 20px;
+}
+.productsearch{
+    width: 80%;
+    border: solid black 2px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+.productsearch input{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+}
+.productsearch input:focus{
+    outline: none;
+ }
+ .products{
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+ }
+ .productsbox{
+    text-align: center;
+    flex-basis: 20%;
+ }
+ .productsbox img{
+    border-radius: 10px;
+ }
+ .footericoncont{
+        padding: 5px;
+}
+.contactcont{
+   width: 75%;
+   padding: 30px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   border-radius: 8px;
+   margin-top: 30px;
+   margin-left: 10%;
+   margin-right: 10px;
+   background-color: #1D232C;
+   color: #f2f4f7;
+}
+.contactcont1{
+ padding: 30px;
+ margin-right: 3%
+}
+.contactcont1 p{
+    padding: 20px;
+    margin-left: -20px;
+    background-color: #1D232C;
+    color: white;
+}
+.contactcont input{
+    border-radius: 5px;
+    display: flex;
+}
+.contactcont input,textarea{
+    padding: 20px;
+    width: 100%;
+    padding-left: 3px;
+    font-size: 16px;
+    border-radius: 4px;  
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right:  
+}
+.form-group{
+    margin-bottom: 15px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+.contactcont p{
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+}
+.contactcont textarea{
+
+        height: 100px;
+        resize: vertical;
+}
+.contactcont button{
+    margin-top: 10px;
+    color: #ffffff;
+    background-color: #69a1fb;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+    font-size:15x;
+}
+.contactcont button:hover{
+    cursor: pointer;
+}
+@media screen and (max-width:600px) {
+    .navbarmenutoggle{
+        display: block;
+    }
+    .navbarlinks{
+        display: none;
+    }
+    .headerimage{
+        display: none;
+    }
+    .servicecont1{
+        display: none;
+    }
+    .servicecont2{
+        flex-direction: column;
+    }       
+    
+} 
